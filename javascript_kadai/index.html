@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>先生からの課題</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="formula">退職金計算式</h1>
+         <div>
+           <label class="formula-label">勤続年数</label>
+           <!-- <input type="number" id="length-of-service" placeholder="数字を入力"> -->
+           <input type="text" id="length-of-service" placeholder="半角正数を入力">年
+         </div>
+         <div>
+           <label class="formula-label">退職金</label>
+           <!-- <input type="number" id="severance-pay" placeholder="数字を入力">万 -->
+           <input type="text" id="severance-pay" placeholder="半角正数を入力">万
+         </div>
+          <div><p>計算結果を出したい方をチェックしてください。両方も可能です。</p>
+             <label class="formula-label"><input type="checkbox" id="income-tax" checked>所得税</label>
+             <label class="formula-label"><input type="checkbox" id="ded" checked>退職金控除額</label>
+          </div>
+      <button id="formula-button">計算</button>
+      <div>
+          <label class="calculation-result">計算結果</label>
+          <p class="result-css">
+            <div class="calculation-result">所得税 (小数は省いています。)</h6><br><input value ="" id="incomeResult">万</div>
+            <div class="calculation-result">退職金控除額 (小数は省いています。)<br><input value="" id="dedResult">万</div>
+          </p>
+      </div>
+    <script src="script.js"></script> 
+</body>
+</html>
